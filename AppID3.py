@@ -51,7 +51,7 @@ if prediction_mode == "Prediksi Ikan":
     if st.radio("Tampilkan Pohon Keputusan (Decision Tree)?", ("Tidak", "Ya")) == "Ya":
         with st.spinner("Sedang memprediksi..."):
             st.write("### Visualisasi Pohon Keputusan (Decision Tree) - Ikan")
-            fig, ax = plt.subplots(figsize=(30, 15))
+            fig, ax = plt.subplots(figsize=(40, 15))
             plot_tree(
                 fish_model, 
                 feature_names=['length', 'weight', 'w_l_ratio'], 
@@ -95,7 +95,7 @@ elif prediction_mode == "Prediksi Buah":
     if st.radio("Tampilkan Pohon Keputusan (Decision Tree)?", ("Tidak", "Ya")) == "Ya":
         with st.spinner("Sedang memprediksi..."):
             st.write("### Visualisasi Pohon Keputusan (Decision Tree) - Buah")
-            fig, ax = plt.subplots(figsize=(30, 15))
+            fig, ax = plt.subplots(figsize=(40, 15))
             plot_tree(
                 fruit_model, 
                 feature_names=['diameter', 'weight', 'red', 'green', 'blue'], 
